@@ -40,14 +40,14 @@ const SignupPage = () => {
   }, [user]);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
-      <h1 className="mb-10 text-3xl font-bold text-gray-800">
+      <h1 className="mb-10 text-3xl font-bold text-gray-600">
         {loading ? "Processing" : "Signup"}
       </h1>
       <hr />
       <div className="flex flex-col justify-center border border-gray-300 p-6 rounded-lg mb-10">
         <label htmlFor="username">Username</label>
         <input
-          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
           type="text"
           id="username"
           value={user.username}
@@ -56,7 +56,7 @@ const SignupPage = () => {
         />
         <label htmlFor="email">Email</label>
         <input
-          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
           type="email"
           id="email"
           value={user.email}
@@ -65,7 +65,7 @@ const SignupPage = () => {
         />
         <label htmlFor="password">Password</label>
         <input
-          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+          className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
           type="password"
           id="password"
           value={user.password}

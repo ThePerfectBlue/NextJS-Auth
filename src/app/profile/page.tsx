@@ -49,7 +49,7 @@ const Profile = () => {
           <p>Please verify using the link sent to your registered email</p>
         </div>
       )}
-      <h1 className="mb-10 text-3xl font-bold text-gray-800">Profile Page</h1>
+      <h1 className="mb-10 text-3xl font-bold text-gray-600">Profile Page</h1>
       <h2 className="pb-2">
         {data === "nothing" ? (
           "Nothing"

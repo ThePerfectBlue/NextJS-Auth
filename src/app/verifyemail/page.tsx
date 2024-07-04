@@ -45,7 +45,7 @@ const VerifyEmailPage = () => {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen py-2">
-      <h1 className="mb-10 text-3xl font-bold text-gray-800">Verify Email</h1>
+      <h1 className="mb-10 text-3xl font-bold text-gray-600">Verify Email</h1>
       <h2 className="p-2 rounded-lg bg-gray-800 text-white">
         {token ? `${token}` : "No token"}
       </h2>
