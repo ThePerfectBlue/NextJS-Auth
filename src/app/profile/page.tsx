@@ -14,6 +14,17 @@ const Profile = () => {
     getUserDetails();
   }, []);
 
+  const logout = async () => {
+    try {
+      await axios.get("/api/users/logout");
+      toast.success("Logout successful");
+      router.push("/login");
+    } catch (error: any) {
+      console.log(error.message);
+      toast.error(error.message);
+    }
+  };
+
   const getUserDetails = async () => {
     try {
       const res = await axios.post("/api/users/profile");
@@ -28,16 +39,6 @@ const Profile = () => {
     }
   };
 
-  const logout = async () => {
-    try {
-      await axios.get("/api/users/logout");
-      toast.success("Logout successful");
-      router.push("/login");
-    } catch (error: any) {
-      console.log(error.message);
-      toast.error(error.message);
-    }
-  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
       {verifyMessage && (
@@ -58,6 +59,7 @@ const Profile = () => {
             className="text-blue-500"
             title="Profile"
             href={`/profile/${data}`}
+            target="_blank"
           >
             {data}
           </Link>
