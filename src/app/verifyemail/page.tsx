@@ -56,7 +56,7 @@ const VerifyEmailPage = () => {
             className="mx-10 p-2 border border-gray-300 rounded-lg my-2 focus:outline-gray-600 "
             href="/login"
           >
-            Login
+            Login/Profile
           </Link>
         </div>
       )}
